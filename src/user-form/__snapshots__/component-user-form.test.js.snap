@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should correctly render user form 1`] = `
+<div
+  className="form-container"
+>
+  <form
+    className="input-form"
+    onSubmit={[Function]}
+  >
+    <div>
+      <label>
+        User Name :
+      </label>
+      <input
+        id="userName"
+        type="text"
+      />
+    </div>
+    <div>
+      <label>
+        Contact :
+      </label>
+      <input
+        id="contact"
+        type="text"
+      />
+    </div>
+    <button
+      className="formSubmit"
+    >
+      Submit
+    </button>
+  </form>
+</div>
+`;
