@@ -11,9 +11,15 @@ describe("", () => {
     const initialState = [];
     const mockStore = configureStore();
     let store = mockStore(initialState);
+    
     it('should correctly render user form', () => {
         const result = renderer.create(<Provider store={store}><MainApp /></Provider>);
         expect(result.toJSON()).toMatchSnapshot();
+    });
+
+    it('should not display the table', () => {
+        const wrapper = mount(<Provider store={store}><MainApp /></Provider>);
+        expect(wrapper.find('.table-container').length).toEqual(0);
     });
 
     it('should correctly display the added data to table', () => {
