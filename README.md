@@ -7,3 +7,4 @@ A sample reactjs application with setup for unit testing with jest and automatio
 npm test
 #run automation tests
 wdio wdio.config.js (inside automation-tests/)
+Testing
